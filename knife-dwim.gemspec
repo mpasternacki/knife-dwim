@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/mpasternacki/knife-dwim"
   s.summary     = %q{Upload file to Chef server correctly}
   s.description = %q{Run a correct knife command to upload file to Chef server}
+  s.licenses    = ['BSD']
 
   s.rubyforge_project = "knife-dwim"
 
