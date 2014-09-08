@@ -58,9 +58,9 @@ module KnifeDwim
           when /^data.bags\/(\w+)\/.*\.ya?ml$/
             run_knife(Chef::Knife::DataBagFromYaml, $1, path.basename)
           when /^data.bags\/(\w+)\//
-            run_knife(Chef::Knife::DataBagFromYaml, $1, path.basename)
+            run_knife(Chef::Knife::DataBagFromFile, $1, path.basename)
           else
-            ui.error "Don't know what to do with #{pn}."
+            ui.error "Don't know what to do with #{path}."
           end
         end
       end
